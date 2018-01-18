@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -69,13 +69,14 @@ namespace MavLinkReader
                 Prs = (int)(Sp.press_abs * 1000f);
                 Tep = Sp.temperature;
                 Dif = (int)(Sp.press_diff * 1000f);
+			/*
                 if (Sw == null)
                 {
                     Sw = new StreamWriter("c:\\Baro.csv");
                     Sw.Write("\"Item\", \"Pressure\", \"Temp\", \"Difference\"\r\n");
                 }
                 String S = String.Format("{0}, {1}, {2}, {3}\r\n", Total++, Prs, Tep, Dif);
-                Sw.Write(S);
+                Sw.Write(S);*/
             }
             if (x > 0)
             {
